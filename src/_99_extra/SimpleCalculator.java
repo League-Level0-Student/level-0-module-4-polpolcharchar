@@ -15,6 +15,21 @@ int num2 = Integer.parseInt(JOptionPane.showInputDialog("Enter another number"))
 				null);
 
 		// 5. Call the methods created in steps 3 and 4 to perform the appropriate operation.
+if(operation == 0) {
+	add(num1, num2);
+}
+else if(operation == 1) {
+	subtract(num1, num2);
+}
+if(operation == 2) {
+	multiply(num1, num2);
+}
+if(operation == 3) {
+	divide(num1, num2);
+}
+
+
+
 
 		// 6. Wrap steps 1, 2 and 5 in a for loop to repeat calculator operations
 	}
@@ -31,9 +46,13 @@ static void subtract(int num1, int num2) {
 	JOptionPane.showMessageDialog(null, num1 + " - " + num2 + " = " + (num1-num2));
 }
 
+static void divide(int num1, int num2) {
+	JOptionPane.showMessageDialog(null, num1 + " / " + num2 + " = " + (num1/num2));
+}
 
-
-
+static void multiply(int num1, int num2) {
+	JOptionPane.showMessageDialog(null, num1 + " * " + num2 + " = " + (num1*num2));
+}
 
 
 
